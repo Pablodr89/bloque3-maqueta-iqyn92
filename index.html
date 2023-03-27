@@ -9,8 +9,90 @@
     <form>
       <fieldset>
         <legend>Datos Personales</legend>
-        labe
+        <label>Nombre</label>
+        <input type="text" name="nombre" />
+        <label>Apellidos</label>
+        <input type="text" name="apellidos" />
+        <label>Edad</label>
+        <input type="number" name="edad" />
+        <label>Sexo:</label>
+        <label>Hombre</label>
+        <input type="radio" name="sexo" />
+        <label>Mujer</label>
+        <input type="radio" name="sexo" />
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="cumple" />
       </fieldset>
+
+      <fieldset>
+        <legend>Dirección</legend>
+        <label>Tipo de via</label>
+        <select>
+          <option value="seleccionar" selected>--Seleccionar--</option>
+          <option value="calle">Calle</option>
+          <option value="avenida">Avenida</option>
+          <option value="plaza">Plaza</option>
+          <option value="carretera">Carretera</option>
+        </select>
+        <label>Otro:</label>
+        <input type="text" name="otro" />
+        <label>Nombre</label>
+        <input type="text" name="nombre" />
+        <label>Portal</label>
+        <input type="text" name="portal" />
+        <label>Planta</label>
+        <input type="number" name="planta" />
+        <label>Puerta</label>
+        <input type="text" name="puerta" />
+        <label>Codigo Postal</label>
+        <input type="number" name="cp" />
+        <label>Localidad</label>
+        <input type="text" name="localidad" />
+        <label>Provincia</label>
+        <input type="text" name="provincia" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contacto</legend>
+        <label>Email</label>
+        <input type="email" name="email" />
+        <label>Teléfono</label>
+        <input type="number" name="telefono" />
+        <label>Fotografía</label>
+        <input
+          type="file"
+          accept="image/png, image/jpg"
+          name="foto"
+          maxlength="1024"
+        /><br />
+        <label>Aficiones(Seleccione cuantas quiera):</label><br />
+        <label>Deportes</label>
+        <input type="radio" name="" /><br />
+        <label>Gastronomía</label>
+        <input type="radio" name="" /><br />
+        <label>Videojuegos</label>
+        <input type="radio" name="" /><br />
+        <label>Leer</label>
+        <input type="radio" name="" /><br />
+        <label>Escribir</label>
+        <input type="radio" name="" /><br />
+        <label>Bailar</label>
+        <input type="radio" name="" /><br />
+        <label>Fotografía</label>
+        <input type="radio" name="" /><br />
+        <label>Moda</label>
+        <input type="radio" name="" /><br />
+        <label>Pintura</label>
+        <input type="radio" name="" /><br />
+        <label>Origami</label>
+        <input type="radio" name="" /><br />
+        <label>Observaciones</label>
+        <textarea name="observaciones" maxlength="500"></textarea>
+      </fieldset>
+
+      <input type="submit" value="Enviar" />
+      <input type="submit" value="Cancelar" />
+      <input type="submit" value="Limpiar" />
     </form>
   </body>
 </html>
